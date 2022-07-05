@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"Fraunces",
+			"Polge"
+		],
+		"liveServer.settings.port": 5502
+	}
+}
