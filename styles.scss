@@ -16,6 +16,7 @@
 :root {
   // ### Primary
   --darkCyan: hsl(158, 36%, 37%);
+  --darkerCyan: hsl(158, 36%, 15%);
   --cream: hsl(30, 38%, 92%);
   // ### Neutral
   --veryDarkBlue: hsl(212, 21%, 14%);
@@ -98,14 +99,23 @@ h2 {
 }
 #add-cart {
   text-align: center;
+  font-weight: bold;
   margin: 2em auto 0;
   background-color: var(--darkCyan);
   color: var(--white);
   width: 100%;
-  padding: 8px;
+  padding: 20px;
   border-radius: 8px;
   border: none;
 }
+button:hover {
+  cursor: pointer;
+  background-color: var(--darkerCyan);
+  color: var(--white);
+}
+// button:active {
+//   background-color: var(--darkerCyan);
+// }
 .attribution {
   font-size: 11px;
   text-align: center;
