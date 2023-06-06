@@ -1,13 +1,14 @@
 {
-    "cSpell.words": [
-        "AAIA",
-        "AAXR",
-        "discript",
-        "EACI",
-        "FAAA",
-        "fraunces",
-        "GAAA",
-        "Polge"
-    ],
-    "editor.formatOnSave": true
+  "cSpell.words": [
+    "AAIA",
+    "AAXR",
+    "discript",
+    "EACI",
+    "FAAA",
+    "fraunces",
+    "GAAA",
+    "Polge"
+  ],
+  "editor.formatOnSave": true,
+  "liveServer.settings.port": 5501
 }
