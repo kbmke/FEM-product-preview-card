@@ -1,0 +1,159 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  font-size: 14px;
+  --darkCyan: hsl(158, 36%, 37%);
+  --newPrice: hsl(158, 36%, 37%);
+  --button: hsl(158, 36%, 37%);
+  --darkerCyan: hsl(158, 36%, 15%);
+  --active: hsl(158, 36%, 15%);
+  --cream: hsl(30, 38%, 92%);
+  --mainBG: hsl(30, 38%, 92%);
+  --veryDarkBlue: hsl(212, 21%, 14%);
+  --productName: hsl(212, 21%, 14%);
+  --darkGrayishBlue: hsl(228, 12%, 48%);
+  --para: hsl(228, 12%, 48%);
+  --oldPrice: hsl(228, 12%, 48%);
+  --productCat: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --cardBG: hsl(0, 0%, 100%);
+  font-size: 14px;
+}
+
+body {
+  display: grid;
+  margin: 1rem;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--mainBG);
+  place-content: center;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  --content-padding: 1.5rem;
+  --content-spacing: 1rem;
+}
+
+.product-content {
+  display: grid;
+  gap: --product-spacing;
+  padding: var(--content-padding);
+}
+
+.product-category {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1rem;
+  color: var(--productCat);
+}
+
+.product-title {
+  font-family: "Fraunces";
+  font-size: 1.6rem;
+  color: var(--productName);
+  line-height: var(--content-spacing);
+}
+
+.new-price {
+  font-family: "Fraunces";
+  color: var(--darkCyan);
+  font-size: 1.3rem;
+}
+
+.button {
+  background-color: var(--darkCyan);
+  border-radius: 0.3rem;
+  border: none;
+  color: var(--white);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

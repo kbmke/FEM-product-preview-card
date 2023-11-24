@@ -78,6 +78,29 @@ h6 {
   isolation: isolate;
 }
 
+:root {
+  font-size: 14px;
+  // ### Primary
+  --darkCyan: hsl(158, 36%, 37%);
+  --newPrice: hsl(158, 36%, 37%);
+  --button: hsl(158, 36%, 37%);
+  --darkerCyan: hsl(158, 36%, 15%);
+  --active: hsl(158, 36%, 15%);
+  --cream: hsl(30, 38%, 92%);
+  --mainBG: hsl(30, 38%, 92%);
+
+  // ### Neutral
+  --veryDarkBlue: hsl(212, 21%, 14%);
+  --productName: hsl(212, 21%, 14%);
+  --darkGrayishBlue: hsl(228, 12%, 48%);
+  --para: hsl(228, 12%, 48%);
+  --oldPrice: hsl(228, 12%, 48%);
+  --productCat: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --cardBG: hsl(0, 0%, 100%);
+font-size: 14px;
+}
+
 // import montserrat font 500 & 700 weights
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
 
@@ -88,47 +111,34 @@ h6 {
 
 // font-family: 'Fraunces',
 // serif;
-:root {
-  font-size: 14px;
-  // ### Primary
-  --darkCyan: hsl(158, 36%, 37%);
-  --darkerCyan: hsl(158, 36%, 15%);
-  --cream: hsl(30, 38%, 92%);
 
-  // ### Neutral
-  --veryDarkBlue: hsl(212, 21%, 14%);
-  --darkGrayishBlue: hsl(228, 12%, 48%);
-  --white: hsl(0, 0%, 100%);
-  --activec: hsl(158, 36%, 15%);
-
-}
 
 body {
   display: grid;
   margin: 1rem;
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
-  background-color: var(--cream);
+  background-color: var(--mainBG);
   place-content: center;
 }
 
 // utility
-.visually-hidden:not(:focus):not(:active) {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
+// .visually-hidden:not(:focus):not(:active) {
+//   clip: rect(0 0 0 0);
+//   clip-path: inset(50%);
+//   height: 1px;
+//   overflow: hidden;
+//   position: absolute;
+//   white-space: nowrap;
+//   width: 1px;
+// }
 
-.flex-group {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  align-items: center;
-}
+// .flex-group {
+//   display: flex;
+//   gap: 1rem;
+//   flex-wrap: wrap;
+//   align-items: center;
+// }
 
 .card {
   background-color: var(--white);
@@ -139,7 +149,7 @@ body {
 }
 
 .product-content {
-  border: 3px solid red;
+  // border: 3px solid red;
   display: grid;
   gap: --product-spacing;
   padding: var(--content-padding);
@@ -148,12 +158,14 @@ body {
 .product-category {
   text-transform: uppercase;
   letter-spacing: 5px;
+  font-size: 1rem;
+  color: var(--productCat);
 }
 
 .product-title {
   font-family: "Fraunces";
   font-size: 1.6rem;
-  color: var(--darkCyan);
+  color: var(--productName);
   line-height: var(--content-spacing);
 }
 
